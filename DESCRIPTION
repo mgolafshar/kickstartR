@@ -1,6 +1,6 @@
 Package: butteR
 Type: Package
-Title: A Package to Help You 'Slide' Into Your Project
+Title: Start R projects with less friction
 Version: 0.1.0
 Authors@R: c(
     person("Michael","Golafshar", email = "golafshar.michael@mayo.edu", role = c("aut","cre")),
