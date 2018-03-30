@@ -33,6 +33,7 @@ create.proj(path = "C:/Users/username/Desktop", parent = "my_new_project")
 filepath <- "C:/Users/username/Desktop"
 create.proj(path = filepath, parent = "Project_x", sub = c("Mulder", "Scully"), doctype = "md", setwd = TRUE)
 }
-\author{
-Michael Golafshar
+#\author{
+
+M. Golafshar
 }

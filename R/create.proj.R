@@ -9,7 +9,7 @@
 #'     User supplied folders will overwrite the default options.
 #'     For no subfolders, supply an empty list.
 #' @param doctype (optional) Specify the type of document to be created as README.
-#'     Defoult is "txt". Any valid document type (i.e. "md", "doc") can be supplied.
+#'     Default is "txt". Any valid document type (i.e. "md", "doc") can be supplied.
 #' @param setwd (optional) Sets the newly created project as the working directory. Default is FALSE
 #' @author Michael Golafshar
 #' @examples
