@@ -1,14 +1,14 @@
 
 #' Create project folder with preset or user given sub folders and a README file.
 #'
-#' @param pack A comma separated list of package names .
+#' @param pkg A comma separated list of package names .
 #' @param default (optional) Load default set of libraries. Default is set to TRUE
 #'                Default libraries include:
 #'                    Tidyverse - suite of data cleaning and manipulation tools
 #'                    Arsenal - functions for large-scale statistical summaries
 #'                    others????
 #' @param group (optional) Set of additional libraries to load for specific tasks
-#'               i.e. viz, predict, ???
+#'               i.e. viz, predict, descriptive, trees, ???
 #' @author Matthew Buras
 #' @examples
 #' # load default packages
