@@ -1,7 +1,7 @@
 
 #' Create project folder with preset or user given sub folders and a README file.
 #'
-#' @param packages (optional) A comma separated list of package names .
+#' @param pack A comma separated list of package names .
 #' @param default (optional) Load default set of libraries. Default is set to TRUE
 #'                Default libraries include:
 #'                    Tidyverse - suite of data cleaning and manipulation tools
@@ -15,7 +15,7 @@
 #' packages()
 #'
 #' # load user defined package list
-#'packages(rpart, pROC, rattle, rpart.plot, randomForest, caret,)
+#'packages(rpart, pROC, rattle, rpart.plot, randomForest, caret) # Can we load without quotes???
 #'
 #'#' # load group without default package
 #'packages(group = "viz", default = FALSE)
