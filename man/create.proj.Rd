@@ -19,7 +19,7 @@ User supplied folders will overwrite the default options.
 For no subfolders, supply an empty list.}
 
 \item{doctype}{(optional) Specify the type of document to be created as README.
-Defoult is "txt". Any valid document type (i.e. "md", "doc") can be supplied.}
+Default is "txt". Any valid document type (i.e. "md", "doc") can be supplied.}
 
 \item{setwd}{(optional) Sets the newly created project as the working directory. Default is FALSE}
 }
@@ -33,7 +33,6 @@ create.proj(path = "C:/Users/username/Desktop", parent = "my_new_project")
 filepath <- "C:/Users/username/Desktop"
 create.proj(path = filepath, parent = "Project_x", sub = c("Mulder", "Scully"), doctype = "md", setwd = TRUE)
 }
-#\author{
-
-M. Golafshar
+\author{
+Michael Golafshar
 }
