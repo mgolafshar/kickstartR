@@ -1,4 +1,4 @@
-Package: kickstart
+Package: kickstartR
 Type: Package
 Title: Start R projects with less friction
 Version: 0.1.0
