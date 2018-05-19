@@ -25,10 +25,18 @@
 #Load collections by type of analysis?
 #Print message with packages installed
 
+#can feed package list in c() form
+#ex: c("tidyverse", "ggpubr", "summarytools") or as
+#a character string separated by a single space
+#ex: "tidyverse ggpubr summarytools"
+
 packages <- function(pkg){
+  pkg <- strsplit(pkg, split = " ", fixed = TRUE)
+  pkg <- dput(unlist(pkg))
   new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
-  if (length(new.pkg))
+  if (length(new.pkg)){
     install.packages(new.pkg, dependencies = TRUE)
+  }
   sapply(pkg, require, character.only = TRUE)
 }
 
