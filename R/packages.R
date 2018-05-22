@@ -63,3 +63,26 @@ packages2 <- function(pkg, reinstall=FALSE){
   }
 }
 
+packages3 <- function(pkg, reinstall=FALSE, mirror){
+  if(reinstall==FALSE){
+    pkg <- strsplit(pkg, split = " ", fixed = TRUE)
+    pkg <- dput(unlist(pkg))
+    new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+    if (length(new.pkg)){
+      if (length(mirror)){
+        install.packages(new.pkg, dependencies = TRUE, repos = mirror)
+      }
+      install.packages(new.pkg, dependencies = TRUE)
+    }
+    sapply(pkg, require, character.only = TRUE)
+  }
+  else{
+    if (length(mirror)){
+      install.packages(pkg, dependencies = TRUE, repos = mirror)
+      sapply(pkg, require, character.only = TRUE)
+    }
+    install.packages(pkg, dependencies = TRUE)
+    sapply(pkg, require, character.only = TRUE)
+  }
+}
+
