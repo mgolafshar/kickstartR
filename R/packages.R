@@ -30,40 +30,22 @@
 #'a character string separated by a single space
 #'Ex2: "tidyverse ggpubr summarytools"
 
-packages <- function(pkg){
-  pkg <- strsplit(pkg, split = " ", fixed = TRUE)
-  pkg <- dput(unlist(pkg))
-  new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
-  if (length(new.pkg)){
-    install.packages(new.pkg, dependencies = TRUE)
-  }
-  sapply(pkg, require, character.only = TRUE)
-}
-
 #'Only issue with code below is that if you have to restart
 #'your R session it will auto recall the function as
 #'packages2(pkg, reinstall = TRUE) after the session
 #'reinitializes. If that happens all you have to do is
 #'resubmit the function as it was before refreshing the R
 #'session and it will work.
+#'
+#'This can be avoided by entering the list of packages in the
+#'function call.
+#'
+#'In otherwords don't do the following.
+#'pkglist <- "tidyverse summarytools"
+#'packages(pkglist)
+#'Instead do packages("tidyverse summarytools")
 
-packages2 <- function(pkg, reinstall=FALSE){
-  if(reinstall==FALSE){
-    pkg <- strsplit(pkg, split = " ", fixed = TRUE)
-    pkg <- dput(unlist(pkg))
-    new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
-    if (length(new.pkg)){
-      install.packages(new.pkg, dependencies = TRUE)
-    }
-    sapply(pkg, require, character.only = TRUE)
-  }
-  else{
-    install.packages(pkg, dependencies = TRUE)
-    sapply(pkg, require, character.only = TRUE)
-  }
-}
-
-packages3 <- function(pkg, reinstall=FALSE, mirror){
+packages <- function(pkg, reinstall=FALSE, mirror){
   if(reinstall==FALSE){
     pkg <- strsplit(pkg, split = " ", fixed = TRUE)
     pkg <- dput(unlist(pkg))
