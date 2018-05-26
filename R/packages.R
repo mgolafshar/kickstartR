@@ -1,5 +1,5 @@
 
-#' Create project folder with preset or user given sub folders and a README file.
+#' Load all needed packages succinctly
 #'
 #' @param pkg A comma separated list of package names .
 #' @param default (optional) Load default set of libraries. Default is set to TRUE
