@@ -2,9 +2,9 @@
 % Please edit documentation in R/packages.R
 \name{packages}
 \alias{packages}
-\title{Create project folder with preset or user given sub folders and a README file.}
+\title{Load all needed packages succinctly}
 \usage{
-packages(pkg)
+packages(pkg, reinstall = FALSE, mirror)
 }
 \arguments{
 \item{pkg}{A comma separated list of package names .}
@@ -19,7 +19,7 @@ Default libraries include:
 i.e. viz, predict, descriptive, trees, ???}
 }
 \description{
-Create project folder with preset or user given sub folders and a README file.
+Load all needed packages succinctly
 }
 \examples{
 # load default packages

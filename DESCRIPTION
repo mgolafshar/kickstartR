@@ -8,13 +8,10 @@ Authors@R: as.person(c(
     ))
 Description: A small group of 'R' functions to help you get started quickly with any project.
 License: GPL (>= 2)
-Suggests: ,
-    knitr,
-    rmarkdown
-Depends: 
-Imports: 
-URL: 
+Suggests:
+Depends:
+Imports:
+URL:
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
-VignetteBuilder: knitr
