@@ -1,6 +1,6 @@
 Overview
 --------
-`KickstartR` is a set of functions that are designed to make it easy to speed through the tedious startup stage of any new project. 
+`kickstartR` is a set of functions that are designed to make it easy to speed through the tedious startup stage of any new project. `kickstartR` is a package in development. There are 2 functions currently included in the package (_highlighted below_), but we plan on adding more as we find time outside our busy lives.
 &nbsp;  
 
 Installation
@@ -31,7 +31,7 @@ create.proj(path = "~/Desktop",
 
 ### The `packages()` function  
   
-`packages()` is a function that simplifies the process of loading multiple libraries. Feed the `packages()` function a list if packages, and it will load them all for you ( _including downloading them form CRAN if necessary_ ).
+`packages()` is a function that simplifies the process of loading multiple libraries. Feed the `packages()` function a list if packages, and it will load them all for you (_including downloading them form CRAN if necessary_).
 
 #### _Example:_
 ```
