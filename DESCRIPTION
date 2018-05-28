@@ -1,6 +1,6 @@
 Package: kickstartR
 Type: Package
-Title: Kickstart your R Projects
+Title: Kickstart Your R Projects
 Version: 0.1.0
 Authors@R: as.person(c(
     "Michael Golafshar <golafshar.michael@mayo.edu> [aut, cre]",
