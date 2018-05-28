@@ -39,7 +39,7 @@ create.proj(path = "~/Desktop",
 packages(c("tidyverse", "arsenal", "survival"))
 
 # Or better yet...feed it a space separated string
-packages("tidyverse arsenal survival"))
+packages("tidyverse arsenal survival")
 
 ```
 
