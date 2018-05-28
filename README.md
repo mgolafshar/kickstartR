@@ -19,7 +19,7 @@ Functions
    
 You've been handed an exciting project and are eager to dig in, but, before you can start writing code and exploring the data, you need to set up your project directories. The `create.proj()` function does it it for you. Simply feed it a path, project name and any number of subfolders, then, get to work.
 
-##### _Example_
+#### _Example:_
 Create a project called "Project_x" on your desktop with 3 sub folders called "Mulder", "Scully" and "The_Truth", plus a blank README.md file:
 ```
 create.proj(path = "~/Desktop", 
