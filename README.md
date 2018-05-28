@@ -5,7 +5,7 @@ Overview
 
 Installation
 ------------
- The development version of kickstartR can easily be downloaded from GitHub using the `devtools` package.
+ The development version of kickstartR can be downloaded from GitHub using the `devtools` package.
 
 ```
 # install.packages("devtools")
@@ -33,5 +33,13 @@ create.proj(path = "~/Desktop",
   
 `packages()` is a function that simplifies the process of loading multiple libraries. Feed the `packages()` function a list if packages, and it will load them all for you ( _including downloading them form CRAN if necessary_ ).
 
+#### _Example:_
+```
+# Feed it a list of packages
+packages(c("tidyverse", "arsenal", "survival"))
 
+# Or better yet...feed it a space separated string
+packages("tidyverse arsenal survival"))
+
+```
 
