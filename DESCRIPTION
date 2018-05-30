@@ -1,11 +1,11 @@
-Package: kickstart
+Package: kickstartR
 Type: Package
-Title: Start R projects with less friction
+Title: Kickstart Your R Projects
 Version: 0.1.0
-Authors@R: c(
-    person("Michael","Golafshar", email = "golafshar.michael@mayo.edu", role = c("aut","cre")),
-    person("Matthew", "Buras", email = "buras.matthew@mayo.edu", role = "aut")
-    )
+Authors@R: as.person(c(
+    "Michael Golafshar <golafshar.michael@mayo.edu> [aut, cre]",
+    "Matthew Buras <buras.matthew@mayo.edu> [aut]"
+    ))
 Description: A small group of 'R' functions to help you get started quickly with any project.
 License: GPL (>= 2)
 Suggests:
