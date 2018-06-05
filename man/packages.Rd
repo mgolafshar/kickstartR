@@ -2,34 +2,31 @@
 % Please edit documentation in R/packages.R
 \name{packages}
 \alias{packages}
-\title{Create project folder with preset or user given sub folders and a README file.}
+\title{Load all needed packages succinctly}
 \usage{
-packages(pkg)
+packages(pkg, reinstall = FALSE, mirror = "https://cloud.r-project.org/",
+  quiet = TRUE)
 }
 \arguments{
 \item{pkg}{A comma separated list of package names .}
 
-\item{default}{(optional) Load default set of libraries. Default is set to TRUE
-Default libraries include:
-    Tidyverse - suite of data cleaning and manipulation tools
-    Arsenal - functions for large-scale statistical summaries
-    others????}
+\item{reinstall}{A logical indicating whether all of the packages provided should be installed or re-installed. Defalut is FALSE.}
 
-\item{group}{(optional) Set of additional libraries to load for specific tasks
-i.e. viz, predict, descriptive, trees, ???}
+\item{mirror}{A character string indicating the CRAN mirror to use to install packages. Default is mirror = "https://cloud.r-project.org/".}
+
+\item{quiet}{A logical passed to install.packages for a quiet install. Default is TRUE.}
 }
 \description{
-Create project folder with preset or user given sub folders and a README file.
+Load all needed packages succinctly
 }
 \examples{
-# load default packages
-packages()
 
-# load user defined package list
-packages(rpart, pROC, rattle, rpart.plot, randomForest, caret) # Can we load without quotes???
-
-#' # load group without default package
-packages(group = "viz", default = FALSE)
+Load collections by type of analysis?
+Print message with packages installed
+Can feed package list in c() form
+Ex1: c("arsenal", "rpart", "survival") or as
+a character string separated by a single space
+Ex2: "arsenal rpart survival"
 }
 \author{
 Matthew Buras
