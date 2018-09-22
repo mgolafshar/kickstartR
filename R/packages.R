@@ -26,13 +26,13 @@ packages <- function(pkg, reinstall=FALSE, repos = "https://cloud.r-project.org/
     if(reinstall==FALSE){
       new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
       if (length(new.pkg)){
-        install.packages(new.pkg, dependencies = TRUE, quiet = quiet, repos = repos)
+        install.packages(new.pkg, dependencies = TRUE)
       }
       sapply(pkg, require, character.only = TRUE)
     }
 
     else{
-      install.packages(pkg, dependencies = TRUE, quiet = quiet, repos = repos)
+      install.packages(pkg, dependencies = TRUE)
       sapply(pkg, require, character.only = TRUE)
       }
     }
