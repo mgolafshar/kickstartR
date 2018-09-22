@@ -4,8 +4,10 @@
 \alias{packages}
 \title{Load all needed packages succinctly}
 \usage{
+
 packages(pkg, reinstall = FALSE, mirror = "https://cloud.r-project.org/",
   quiet = TRUE)
+
 }
 \arguments{
 \item{pkg}{A comma separated list of package names .}
